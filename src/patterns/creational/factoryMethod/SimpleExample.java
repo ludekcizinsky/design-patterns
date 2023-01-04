@@ -1,5 +1,6 @@
 package patterns.creational.factoryMethod;
 
+import patterns.creational.factoryMethod.implementation.OperatorConcatenator;
 import patterns.creational.factoryMethod.implementation.MethodConcatenator;
 import patterns.creational.factoryMethod.implementation.Concatenator;
 
@@ -15,7 +16,7 @@ public class SimpleExample {
         System.out.println(method.concat(s1, s2));
 
         // Concat them using concat method of the String class
-        Concatenator operator = new MethodConcatenator();
+        Concatenator operator = new OperatorConcatenator();
         System.out.println(operator.concat(s1, s2));
     } 
 }
